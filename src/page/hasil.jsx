@@ -45,6 +45,7 @@ doc.text('Club',  119, 30, );
 doc.setTextColor(0, 0, 0);
 doc.setFontSize(12); 
 doc.setFont("times","normal");
+doc.text(`No. Registrasi: ${data.noRegistrasi}`, 20, 42);
 doc.text(`Nama: ${data.nama}`, 20, 50);
 doc.text(`Stambuk: ${data.stambuk}`, 20, 58);
 doc.text(`Jurusan: ${data.jurusan}`, 20, 66);
@@ -54,8 +55,8 @@ doc.text(`Jenis Kelamin: ${data.jeniskelamin}`, 20, 90);
 doc.text(`Agama: ${data.agama}`, 20, 98);
 doc.text(`Alamat: ${data.alamat}`, 20, 106);
 doc.text(`NoHP/WA: +62${data.nohp}`, 20, 114);
-doc.text(`Riwayat Penyakit: ${data.rp}`, 20, 122);
-doc.text(`Riwayat Organisasi: ${data.riwayat}`, 20, 130);
+doc.text(`Riwayat Penyakit: ${data.riwayatPenyakit}`, 20, 122);
+doc.text(`Riwayat Organisasi: ${data.riwayatOrganisasi}`, 20, 130);
 doc.text(`Alasan Masuk TSC: ${data.alasan}`, 20, 138);
 doc.rect(160, 98, 30, 40 );
 doc.text('foto 3X4', 175, 118, { align: 'center', verticalAlign: 'middle' });
@@ -64,18 +65,17 @@ doc.save('datapendaftaran.pdf');
 
 return (
   <Box p={4}
-  backgroundImage={bcgk}
-  backgroundSize={'cover'}
-  backgroundColor={'black'}>
+  className='p'
+  >
     {dataPendaftaran.length === 0 ? (
     <Text>Tidak ada data pendaftaran yang tersedia.</Text>) : (
-    <Box>
+    <Box className='m'
+    marginTop='7%'>
       {dataPendaftaran.map((data) => (
-      <Box className='p'
+      <Box className='a'
       color={''}
       key={data.id}
       mb={4}
-      border="1px"
       borderColor="black"
       fontFamily='times'
       p={4}
@@ -84,7 +84,7 @@ return (
           <Text fontWeight="bold" fontSize="3xl" mb={4}>
             Formulir Pendaftaran Anggota
             <br />
-          <Text as="span" fontWeight="semibold" color="black">
+          <Text className='t' as="span" fontWeight="semibold" color='black'>
           Technic
           </Text>{' '}
           <Text as="span" fontWeight="semibold" color="red">

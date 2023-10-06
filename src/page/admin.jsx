@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import '../css/admin.css' 
+import '../css/pendaftaran.css' 
 import { db } from '../firebase';
+import aj from '../image/ft.png'
 import bcgk from '../image/background pendaftaran online .png';
 import { collection, getDocs, orderBy, query, doc, getDoc, deleteDoc, updateDoc } from 'firebase/firestore';
 import { Box, Table, TableCaption, Thead, Tr, Th, Tbody, Td, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Input } from '@chakra-ui/react';
@@ -98,11 +99,6 @@ const Admin = () => {
   return (
     <section>
       <Box
-        isolation='isolate'
-        backgroundImage={bcgk}
-        backgroundSize='cover'
-        height='auto'
-        width='100%'
       >
         <div className='p' style={{ position: 'relative', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
           <div style={{ maxHeight: '100%', overflowY: 'auto' }}>
@@ -166,11 +162,13 @@ const Admin = () => {
         <Modal isOpen={isViewModalOpen} onClose={closeViewModal}>
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader>Detail Pendaftaran</ModalHeader>
+            <ModalHeader  backgroundImage={aj}
+            color='black'
+            opacity={0.9}>Detail Pendaftaran</ModalHeader>
             <ModalCloseButton />
-            <ModalBody 
-            color='white'
-            backgroundColor='black'>
+            <ModalBody backgroundImage={aj}
+            color='black'
+            opacity={0.9}>
               <p>No Registrasi: {isEditMode ? <Input name="noRegistrasi" value={editData.noRegistrasi} onChange={handleEditInputChange} /> : viewData.noRegistrasi}</p>
               <p>Nama: {isEditMode ? <Input name="nama" value={editData.nama} onChange={handleEditInputChange} /> : viewData.nama}</p>
               <p>Stambuk: {isEditMode ? <Input name="stambuk" value={editData.stambuk} onChange={handleEditInputChange} /> : viewData.stambuk}</p>
@@ -185,7 +183,9 @@ const Admin = () => {
               <p>Riwayat Organisasi: {isEditMode ? <Input name="riwayatOrganisasi" value={editData.riwayatOrganisasi} onChange={handleEditInputChange} /> : viewData.riwayatOrganisasi}</p>
               <p>Alasan masuk Tsc: {isEditMode ? <Input name="alasanMasukTsc" value={editData.alasan} onChange={handleEditInputChange} /> : viewData.alasan}</p>
             </ModalBody>
-            <ModalFooter>
+            <ModalFooter  backgroundImage={aj}
+            color='black'
+            opacity={0.9}>
               {isEditMode ? (
                 <>
                   <Button colorScheme='green' size='sm' onClick={handleUpdate}>

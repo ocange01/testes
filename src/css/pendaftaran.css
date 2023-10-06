@@ -11,17 +11,17 @@ textarea:hover {
   color:white; 
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .main {
     background-image: url('../image/mobile.png');
     background-position: center;
     background-position: center;
-  }
-}
+  } */
 
-/* .main {
+@media (min-width: 768px) {
+.main {
   font: italic;
-  color: aliceblue;
+  color:white;
   background-color: rgb(23, 17, 3);
 }
 
@@ -29,8 +29,15 @@ section {
   place-items: 'center';
   position: relative;
   background-color: rgba(0, 0, 0, 0.888);
-}
+  color: white;
 
+}
+.p{
+  color: white;
+}
+.t{
+  -webkit-text-stroke:1px white;
+}
 section::before {
   background-image: url(../image/background\ pendaftaran\ online\ .png);
   background-size: cover;
@@ -40,12 +47,12 @@ section::before {
   position: absolute;
   background-repeat: no-repeat;
   inset: 0;
-  opacity: 0.7;
+  opacity: 0.9;
   justify-content: center;
   text-align: center;
 }
-
-.container {
+}
+/* .container {
   justify-content: center;
   text-align: center;
   display: flex;
@@ -58,37 +65,19 @@ section::before {
   border-radius: 20px;
   background-color: rgb(30, 27, 27, 0.1);
   isolation: isolate;
-}
-
-
-
-@media (max-width: 768px) {
-  .container {
-    width: 90%;
-    padding: 20px;
-    background-size: auto;
-  }
-
-  .tul {
-    font-size: large;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    margin: 2%;
-    width: 75%;
-    height: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    padding: 20px;
-    background-color: rgba(250, 249, 249, 0);
-    background-size: auto;
-    color: rgb(255, 255, 255);
-  }
-
-  .tul {
-    font-size: large;
-    margin-bottom: 3%;
-  }
 } */
+@media (max-width: 768px) {
+  .main {
+    background-image: url('../image/mobile.png');
+    background-size: cover;
+    color: white;
+    background-position: top center;
+  background-attachment: fixed;
+  }
+}
+.p{
+  color: white;
+}
+.t{
+  -webkit-text-stroke:1px white;
+}

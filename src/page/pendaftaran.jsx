@@ -113,14 +113,14 @@ const Pendaftaran = () => {
   return (
     <Box
       className='main'
-      color='white'
-      bg='rgba(0, 0, 0, 1)'
-      isolation='isolate'
-      backgroundImage={bcgk}
-      backgroundSize='cover'
-      backgroundAttachment='fixed'
-      backgroundRepeat='no-repeat'
-      opacity={1}
+      // color='white'
+      // bg='rgba(0, 0, 0, 1)'
+      // isolation='isolate'
+      // backgroundImage={bcgk}
+      // backgroundSize='cover'
+      // backgroundAttachment='fixed'
+      // backgroundRepeat='no-repeat'
+      // opacity={1}
     >
       <section position='relative'>
         <Box
