@@ -1,0 +1,11 @@
+.p{
+    color: white;
+}
+/* @media (max-width: 480px) {
+    .p {
+      background-image: url('../image/mobile.png');
+      background-position: center;
+      background-size: cover;
+      color: white;
+    }
+  } */
