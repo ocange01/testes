@@ -68,11 +68,29 @@ section::before {
 } */
 @media (max-width: 768px) {
   .main {
-    background-image: url('../image/mobile.png');
-    background-size: cover;
+    font: italic;
+    color:white;
+    background-color: rgb(23, 17, 3);
+  }
+  section {
+    place-items: 'center';
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.888);
     color: white;
+  
+  }
+  section::before {
+    background-image:  url('../image/mobile.png');
+    background-size: cover;
     background-position: top center;
-  background-attachment: fixed;
+    background-attachment: fixed;
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    inset: 0;
+    opacity: 0.6;
+    justify-content: center;
+    text-align: center;
   }
 }
 .p{
