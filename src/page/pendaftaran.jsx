@@ -156,10 +156,12 @@ const Pendaftaran = () => {
                 value={jurusan}
                 onChange={(e) => setJurusan(e.target.value)}
               >
-                <option value='Teknik informatika'>Teknik informatika</option>
-                <option value='Sistem informasi'>Sistem informasi</option>
-                <option value='Rekayasa perangkat lunak'>Rekayasa Perangkat lunak</option>
-                <option value='Manajemen'>Manajemen</option>
+                <option value='Teknik Informatika'>Teknik informatika</option>
+                <option value='Sistem Informasi'>Sistem informasi</option>
+                <option value='Rekayasa Perangkat Lunak'>Rekayasa Perangkat lunak</option>
+                <option value='Manajemen Informatika'>Manajemen</option>
+                <option value='Bisnis Digital'>Manajemen</option>
+                <option value='Kewirausahaan'>Manajemen</option>
               </Select>
             </FormControl>
             <FormControl isRequired id='ttl' marginBottom='4'>
@@ -174,8 +176,9 @@ const Pendaftaran = () => {
                 <input
                   className='tg'
                   type='date'
-                  color='black'
+                  color='white'
                   style={{
+                    border: '1px solid white',
                     backgroundColor: 'transparent',
                     color: 'white',
                   }}
