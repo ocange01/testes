@@ -81,7 +81,7 @@ return (
       fontSize={['md', 'lg', 'xl', '2xl']} >
         <Box  textAlign="center" marginBottom={10}>
           <Text fontWeight="bold" fontSize="3xl" mb={4}>
-            Formulir Pendaftaran Anggota
+            Formulir Pendaftaran Calon Anggota
             <br />
           <Text className='t' as="span" fontWeight="semibold" color='black'>
           Technic

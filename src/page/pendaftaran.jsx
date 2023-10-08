@@ -40,7 +40,7 @@ const Pendaftaran = () => {
       const collectionRef = collection(db, 'datapendaftaran');
       const querySnapshot = await getDocs(collectionRef);
       const documentCount = querySnapshot.size;
-      setRegistrationCounter(documentCount + 1);
+      setRegistrationCounter(documentCount + 5);
     };
 
     fetchDocumentCount();
