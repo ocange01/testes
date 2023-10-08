@@ -4,7 +4,6 @@ import { collection, getDocs, orderBy, query } from 'firebase/firestore';
 import { db } from '../firebase';
 import jsPDF from 'jspdf';
 import '../css/hasil.css'
-import bcgk from '../image/background pendaftaran online .png'
 
 const Hasil = () => {
 const [dataPendaftaran, setDataPendaftaran] = useState([]);
@@ -121,12 +120,12 @@ return (
               </Text>
             </Box>
           </Flex>
-          <Button colorScheme="blue"
+          {/* <Button colorScheme="blue"
           onClick={handlePrint}
           media="print"
           display={['none', 'none', 'none', 'block']}> 
             Print
-          </Button>
+          </Button> */}
           <Button colorScheme="blue" onClick={handleDownloadPDF}>
             Download PDF
           </Button>

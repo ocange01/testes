@@ -136,7 +136,6 @@ const Pendaftaran = () => {
           <form onSubmit={handleSubmit}>
             <Box 
             marginTop='20%'
-            
             >
             <FormControl isRequired marginBottom='4'>
               <FormLabel>Nama Lengkap</FormLabel>
@@ -159,9 +158,9 @@ const Pendaftaran = () => {
                 <option value='Teknik Informatika'>Teknik informatika</option>
                 <option value='Sistem Informasi'>Sistem informasi</option>
                 <option value='Rekayasa Perangkat Lunak'>Rekayasa Perangkat lunak</option>
-                <option value='Manajemen Informatika'>Manajemen</option>
-                <option value='Bisnis Digital'>Manajemen</option>
-                <option value='Kewirausahaan'>Manajemen</option>
+                <option value='Manajemen Informatika'>Manajemen Informatika</option>
+                <option value='Bisnis Digital'>Bisnis Digital</option>
+                <option value='Kewirausahaan'>Kewirausahaan</option>
               </Select>
             </FormControl>
             <FormControl isRequired id='ttl' marginBottom='4'>
@@ -246,7 +245,7 @@ const Pendaftaran = () => {
               <FormLabel>Alasan Masuk TSC</FormLabel>
               <Input type='text' value={alasan} onChange={(e) => setAlasan(e.target.value)} />
             </FormControl>
-            <Button type='submit' colorScheme='blue' marginTop='4'>
+            <Button type='submit' colorScheme='blue' marginTop='4' >
               Daftar
             </Button>
             {isSubmitted && (
