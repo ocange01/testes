@@ -8,10 +8,10 @@ const PrintPage = ({ data }) => {
     doc.setFontSize(22);
     doc.addFont("times");
     doc.setFont("times", "bold");
-    doc.text('Formulir Pendaftaran Anggota', 105, 20, { align: 'center' });
+    doc.text('Formulir Pendaftaran Calon Anggota', 105, 20, { align: 'center' });
     doc.setTextColor(0, 0, 0);
     doc.text('Technic', 70, 30);
-    doc.rect(10, 10, 190, 130);
+    doc.rect(10, 10, 190, 114);
     doc.setTextColor(255, 0, 0);
     doc.text('Study', 98, 30);
     doc.setTextColor(66, 153, 225);
@@ -28,17 +28,13 @@ const PrintPage = ({ data }) => {
     doc.text(`Agama: ${viewData.agama}`, 20, 90);
     doc.text(`Alamat: ${viewData.alamat}`, 20, 98);
     doc.text(`NoHP/WA: +62${viewData.nohp}`, 20, 106);
-    doc.text(`Riwayat Penyakit: ${viewData.riwayatPenyakit}`, 20, 114);
-    doc.text(`Riwayat Organisasi: ${viewData.riwayatOrganisasi}`, 20, 122);
-    doc.text(`Alasan Masuk TSC: ${viewData.alasan}`, 20, 130);
-    doc.rect(160, 90, 30, 40);
-    doc.text('foto 3X4', 175, 110, { align: 'center', verticalAlign: 'middle' });
+    doc.text(`Alasan Masuk TSC: ${viewData.alasan}`, 20, 114);
 
     
     doc.setFontSize(22);
     doc.addFont("times");
     doc.setFont("times", "bold");
-    doc.text('Formulir Pendaftaran Anggota', 105, 152, { align: 'center' });
+    doc.text('Formulir Pendaftaran Calon Anggota', 105, 152, { align: 'center' });
     doc.setTextColor(0, 0, 0);
     doc.text('Technic', 70, 162);
     doc.setTextColor(255, 0, 0);
